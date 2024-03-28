@@ -16,6 +16,9 @@ ARG GO_VERSION=1.21.8
 
 FROM golang:${GO_VERSION}-bookworm AS golang-base
 
+LABEL org.opencontainers.image.source="https://github.com/austinvazquez/special-waddle"
+LABEL org.opencontainers.image.description="This image is just to test dependabot Dockerfile updates"
+
 RUN apt-get update -y && apt-get install -y gcc
 
 FROM registry:2 AS registry
