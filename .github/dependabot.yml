@@ -1,0 +1,7 @@
+version: 2
+updates:
+  # Automatic upgrade for base images used in the Dockerfile
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
